@@ -170,8 +170,11 @@ fun myImage(
 }
 
 @Composable
-fun ButtonComponent(value: String) {
-    Button(onClick = {/*ToDo*/}) {
+fun DefaultButtonComponent(value: String) {
+    Button(onClick = {/*ToDo*/},
+        modifier = Modifier
+            .fillMaxWidth()
+    ) {
         Text(text= value)
     }
 }

@@ -21,7 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.ist.loginscreen.R
-import com.ist.loginscreen.components.ButtonComponent
+import com.ist.loginscreen.components.DefaultButtonComponent
 import com.ist.loginscreen.components.HeadingTextComponent
 import com.ist.loginscreen.components.PasswordTextFieldComponent
 import com.ist.loginscreen.components.SimpleTextComponent
@@ -46,7 +46,7 @@ fun LoginScreen(){
             SimpleTextComponent(value = "Hello again you've been missed!")
             UserFieldComponent(labelValue ="myname@uxclass.live", label="Email")
             PasswordTextFieldComponent(labelValue ="Please Enter Your Password", label = "Password", icon= Icons.Default.Lock)
-            ButtonComponent(value = "LogIn")
+            DefaultButtonComponent(value = "LogIn")
         }
     }
 }
